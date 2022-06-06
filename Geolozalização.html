@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
        <head>
-          <title>Geolocalizacao no Navegador</title>
+          <title>Localização</title>
 
              <script>
 
@@ -18,13 +18,13 @@
                    const getGeoposition = function(){
                    console.log("const getGeoposition = function(){...");  
                    if(navigator.geolocation){    
-                     console.log("Navegador tem suporte ao geolocalização.."); 
+                     console.log("O navegador está pronto"); 
 
                      navigator.geolocation.getCurrentPosition(onLocationSucess
                      , onErrorLocation);
 
                    }else{
-                      throw new Error("Seu navegador nao suporta geolocalização");
+                      throw new Error("O navegador não está habilitado");
                    }
                    }
  
@@ -37,7 +37,7 @@
              </script>
        </head>
    <body onload="funcaoquerodaapoocarregamentodapagina();">
-    <h1>Obtendo a geolocalização do dispositivo</h1>
+    <h1>Localização do dispositivo...Carregando</h1>
     <br></br>
     Latitude:
     <br></br>
@@ -47,7 +47,7 @@
     <br></br>
     <input type="text" id="longitude"></input>
     <br></br>
-    <button type="button" id="btnObtemLatLongitude">OK</button>
+    <button type="button" id="btnLongitude">OK</button>
 
   </body>
 </html>
